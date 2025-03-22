@@ -1,0 +1,34 @@
+[
+   {
+      "id": 1,
+      "title": "Set-up Your Profile",
+      "description": "Choose a username and confirm your password.",
+      "reward": "+1",
+      "completed": true,
+      "path": "/profile/setup"
+   },
+   {
+      "id": 2,
+      "title": "Select a Profile Picture and Header",
+      "description": "Add a picture to build credibility.",
+      "reward": "+1",
+      "completed": false,
+      "path": "/profile/picture"
+   },
+   {
+      "id": 3,
+      "title": "Start Connecting with Potential Network",
+      "description": "Engage with professionals who share your industry or interests.",
+      "reward": "+1",
+      "completed": false,
+      "path": "/network/connect"
+   },
+   {
+      "id": 4,
+      "title": "Create Company/Organization Profile",
+      "description": "Access our database, generate leads, and get involved in exhibitions.",
+      "reward": "+5",
+      "completed": false,
+      "path": "/company/create"
+   }
+]

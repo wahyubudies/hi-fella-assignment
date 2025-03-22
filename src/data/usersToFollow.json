@@ -1,0 +1,23 @@
+[
+   {
+      "id": 1,
+      "name": "Cole Robert",
+      "role": "Customer Acquisition",
+      "position": "Digital Marketing at PT ABC Indonesia",
+      "avatar": "/images/avatar-2.png"
+   },
+   {
+      "id": 2,
+      "name": "Zambore",
+      "role": "Customer Acquisition",
+      "position": "Digital Marketing at PT ABC Indonesia",
+      "avatar": "/images/avatar.png"
+   },
+   {
+      "id": 3,
+      "name": "Kobe Neil",
+      "role": "Customer Acquisition",
+      "position": "Digital Marketing at PT ABC Indonesia",
+      "avatar": "/images/avatar-3.png"
+   }
+]

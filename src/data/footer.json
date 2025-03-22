@@ -1,0 +1,19 @@
+{
+   "mainLinks": [
+      {"name": "About Us", "href": "/about"},
+      {"name": "Premium", "href": "/premium"},
+      {"name": "Quality Inspection", "href": "/quality-inspection"},
+      {"name": "Services", "href": "/services"},
+      {"name": "Advertising", "href": "/advertising"},
+      {"name": "Help Center", "href": "/help"},
+      {"name": "Download", "href": "/download"},
+      {"name": "Privacy Policy", "href": "/privacy"},
+      {"name": "Terms of Services", "href": "/terms"}
+    ],
+    "moreLinks": [
+      {"name": "Careers", "href": "/careers"},
+      {"name": "Blog", "href": "/blog"},
+      {"name": "Press", "href": "/press"},
+      {"name": "Contact", "href": "/contact"}
+    ]
+}

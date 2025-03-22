@@ -1,0 +1,11 @@
+[
+   { "id": 1, "name": "Discover", "icon": "discover-sidebar.svg", "path": "/", "highlight": true },
+   { "id": 2, "name": "Events", "icon": "events-sidebar.svg", "path": "/events" },
+   { "id": 3, "name": "Feeds", "icon": "feeds-sidebar.svg", "path": "/feeds" },
+   { "id": 4, "name": "Networks", "icon": "networks-sidebar.svg", "path": "/networks" },
+   { "id": 5, "name": "Database", "icon": "database-sidebar.svg", "path": "/database" },
+   { "id": 6, "name": "Regulatory", "icon": "regulatory-sidebar.svg", "path": "/regulatory", "isNew": true },
+   { "id": 7, "name": "Messages", "icon": "messages-sidebar.svg", "path": "/messages" },
+   { "id": 8, "name": "Notification", "icon": "notification-sidebar.svg", "path": "/notification" },
+   { "id": 9, "name": "Create a post", "icon": "create-post-sidebar.svg", "path": "/create-post" }
+]

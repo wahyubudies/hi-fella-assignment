@@ -1,0 +1,26 @@
+[
+   {
+      "id": 1,
+      "title": "PT Maju Jaya is looking for Robusta Coffee Product",
+      "category": "Coffee",
+      "requester": {
+         "name": "Sarah Wilson",
+         "role": "Procurement Manager",
+         "position": "Supply Chain at PT Maju Jaya",
+         "time": "5m",
+         "image": "/images/avatar.png"
+      }
+   },
+   {
+      "id": 2,
+      "title": "CV Berkah Abadi is looking for Green Bean Product",
+      "category": "Coffee Bean",
+      "requester": {
+         "name": "Michael Chen",
+         "role": "Sourcing Specialist",
+         "position": "Purchasing at CV Berkah Abadi",
+         "time": "15m",
+         "image": "/images/avatar.png"
+      }
+   }
+]

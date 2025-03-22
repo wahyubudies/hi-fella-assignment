@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hi-Fella Test
 
 ## Getting Started
-
 First, run the development server:
 
-```bash
+```sh
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses `next/font` to automatically optimize and load **Geist**, a new font family for Vercel.
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+### Path Aliases
+This project uses path aliases for cleaner imports:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `@/` - Points to the `src/` directory
+- `@public/` - Points to the `public/` directory
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Example usage:
 
-## Deploy on Vercel
+```js
+// Instead of
+import { Button } from '../../../components/ui';
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+// You can use
+import { Button } from '@/components/ui';
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+// For public assets
+import Logo from '@public/images/logo.png';
+```
+
+### Directory Structure
+```
+hi-fella-test/
+├── public/               # Static assets
+│   ├── icons/            # SVG icons
+│   └── images/           # Images and graphics
+├── src/                  # Source code
+│   ├── app/              # Next.js App Router
+│   ├── components/       # React components
+│   │   ├── layout/       # Layout components
+│   │   └── ui/           # Reusable UI components
+│   └── data/             # JSON data files
+```
+
+#### `/src/app`
+Contains the Next.js App Router pages and layouts.
+
+#### `/src/components`
+Contains all React components, organized into subdirectories:
+
+- `/layout` : Components that form the structure of the page (Navigation, Footer, etc.)
+- `/ui` : Reusable UI components (Button, Badge, Card, etc.)
+
+When creating a new component, you should register it in the corresponding `index.js` file:
+
+```js
+// Example: src/components/layout/index.js
+export { default as Navigation } from './Navigation';
+export { default as Footer } from './Footer';
+export { default as ProfileSetupCard } from './ProfileSetupCard';
+```
+
+This allows for cleaner imports:
+
+```js
+import { Navigation, Footer } from '@/components/layout';
+```
+
+#### `/src/data`
+Contains JSON data files used throughout the application, such as:
+
+- `setupSteps.json` - Profile setup steps data
+- `usersToFollow.json` - User data for the "Who to follow" component
+- `featuredProducts.json` - Product data for the featured products section
+
+#### `/public`
+Contains static files that are served directly:
+
+- `/icons` : SVG icons used throughout the application
+- `/images` : Image assets like logos, avatars, and product images
+
+## Implementation Approach
+This project follows these key principles:
+
+1. **Component-Based Architecture** : UI is broken down into reusable components.
+2. **Separation of Concerns** : Components are organized by their function (layout vs. UI).
+3. **Data Separation** : Static data is stored in JSON files separate from components.
+4. **Client-Side Interactivity** : Interactive components use React state and `"use client"` directive.
+5. **Responsive Design** : All components are designed to work across different screen sizes.
+
+## Tools and Technologies
+- **Next.js 14** : React framework with App Router
+- **React** : UI library
+- **Tailwind CSS** : Utility-first CSS framework
+- **ESLint** : Code linting
+- **Next.js Image Optimization** : For optimized image loading
